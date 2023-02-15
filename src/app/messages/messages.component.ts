@@ -7,5 +7,16 @@ import { MessageService } from '../message.service';
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent {
+  displayMessages = false;
+
+  toggleDisplay() {
+    this.displayMessages = !this.displayMessages;
+  }
+  showMessages() {
+    this.displayMessages = true;
+  }
+  hideMessages() {
+    this.displayMessages = false;
+  }
   constructor( public messageService: MessageService){}
 }

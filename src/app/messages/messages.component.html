@@ -1,4 +1,12 @@
-<div *ngIf="messageService.messages.length">
+<div>
+    <button 
+        type="button" 
+        (click)="this.toggleDisplay()">
+        <span *ngIf="!this.displayMessages">Show Messages</span>
+        <span *ngIf="this.displayMessages">Hide Messages</span>
+    </button>
+</div>
+<div *ngIf="messageService.messages.length && this.displayMessages">
     <h2>Messages</h2>
     <button 
         type="button" 
