@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { StatBlockComponent } from './stat-block/stat-block.component';
+import { SumInterfaceComponent } from './sum-interface/sum-interface.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { StatBlockComponent } from './stat-block/stat-block.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    StatBlockComponent
+    StatBlockComponent,
+    SumInterfaceComponent
   ],
   imports: [
     BrowserModule,

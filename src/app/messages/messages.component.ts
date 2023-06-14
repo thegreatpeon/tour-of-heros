@@ -12,11 +12,5 @@ export class MessagesComponent {
   toggleDisplay() {
     this.displayMessages = !this.displayMessages;
   }
-  showMessages() {
-    this.displayMessages = true;
-  }
-  hideMessages() {
-    this.displayMessages = false;
-  }
   constructor( public messageService: MessageService){}
 }

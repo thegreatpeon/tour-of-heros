@@ -1,0 +1,43 @@
+<ul>
+    <ol>
+        <label for="value1">Value 1: </label>
+        <input
+            type="number"
+            id="Value1"
+            [(ngModel)]="value1"/>
+        <!--
+        <p-inputNumber 
+        inputID="Value1"
+        [(ngModel)]="value1" >
+        </p-inputNumber>
+        -->
+    </ol>
+    <ol>
+        <label for="value2">Value 2: </label>
+        <input
+            type="number"
+            id="Value2"
+            [(ngModel)]="value2"/>
+        <!--
+        <p-inputNumber 
+        inputID="Value2"
+        [(ngModel)]="value2">
+        </p-inputNumber>
+        -->
+    </ol>
+    <ol>
+        <label>Summation: </label>
+        <input
+            type="number"
+            id="Sum"
+            [(ngModel)]="sum"/>
+        <!--
+            <p-inputNumber
+            inputID="Sum"
+            [(ngModel)]="sum">
+        </p-inputNumber>
+        -->
+    </ol>
+</ul>
+<button type="button" (click)="sumAPI()">API Sum</button>
+<button type="button" (click)="sumLocal()">Local Sum</button>
